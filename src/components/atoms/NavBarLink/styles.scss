@@ -1,0 +1,25 @@
+.navbar__link{
+  padding: 0.1rem 0.5rem;
+
+  border: 2px solid #FFFFFFF2;
+  border-radius: 7rem;
+  cursor: pointer;
+  transition: filter .2s ease, border .2s ease, color .2s ease;
+
+  color: #fff;
+  text-decoration: none;
+
+  &:not(.active):hover{
+    border: 2px solid #f9f6c4;
+
+    color: #f9f6c4;
+  }
+
+  &.active{
+    cursor: default;
+
+    &:hover{
+      filter: opacity(0.9)
+    }
+  }
+}
